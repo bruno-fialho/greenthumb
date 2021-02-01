@@ -1,0 +1,485 @@
+@import "./customSelectInput.scss";
+
+$font-stack: "Montserrat", sans-serif;
+$main-background: #F6F6F6;
+$secondary-background: #FFF;
+$header-background: #75BC97;
+$main-color: #A9A9A9;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+body {
+  width: 100vw;
+  color: #A9A9A9;
+  background-color: #F6F6F6;
+  font: 0.875rem $font-stack;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 593px;
+  background: $header-background;
+
+  display: flex;
+  flex-direction: column;
+
+  .header-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+
+
+    #mobile-plantperson {
+      width: 276px;
+      height: 234px;
+      position: absolute;
+      top: 334px;
+      margin: 0 22px;
+    }
+
+    #mobile-leaves {
+      width: 100%;
+      height: 69.48%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .header-content {
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    #logo {
+      width: 163.33px;
+      height: 20px;
+      
+      margin-top: 36px;
+      margin-left: 10.94%;
+    }
+
+    > h1 {
+      width: 78.44%;
+      height: auto;
+
+      margin-top: 31px;
+      margin-left: 10.625%;
+
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 49px;
+      letter-spacing: 0px;
+      color: #FFF;
+    }
+
+    #arrow-down {
+      width: 35px;
+      height: 39px;
+
+      margin-top: 16px;
+      margin-left: 12.5%;
+
+    }
+  }
+}
+
+.select-container {
+  position: relative;
+  width: 100%;
+  height: 739px;
+  background: $secondary-background;
+
+  display: flex;
+  flex-direction: column;
+
+  .sunlight-box {
+    width: 100%;
+    height: 33.333%;
+    color: #848484;
+
+
+    display: flex;
+    flex-direction: column;
+
+    #sun-img {
+      width: 75px;
+      height: 75px;
+      margin-top: 18px;
+      margin-left: 11.875%;
+    }
+
+
+    #sunlight-text {
+      width: 68.44%;
+      height: auto;
+      margin-top: 6px;
+      margin-left: 12.5%;
+
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0px;
+
+      > b {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .water-box {
+    width: 100%;
+    height: 33.333%;
+    color: #797979;
+
+    display: flex;
+    flex-direction: column;
+
+    #water-img {
+      width: 103px;
+      height: 75px;
+      transform: scaleX(-1);
+      margin-top: 13px;
+      margin-left: 13.44%;
+    }
+
+    #water-text {
+      width: 63.48%;
+      height: auto;
+      margin-top: 15px;
+      margin-left: 13.44%;
+
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0px;
+
+      > b {
+        font-weight: 700;
+      }
+    }
+
+    #water-select {
+      width: 76.56%;
+      height: 40px;
+      margin-top: 25px;
+      margin-left: 12.5%;
+    }
+  }
+
+  .pets-box {
+    width: 100%;
+    height: 33.333%;
+    color: #848484;
+
+    display: flex;
+    flex-direction: column;
+
+    #pets-img {
+      width: 75px;
+      height: 62px;
+      margin-top: 24px;
+      margin-left: 11.56%;
+    }
+
+    #pets-text {
+      width: 59.375%;
+      height: auto;
+      margin-top: 13px;
+      margin-left: 11.56%;
+
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0px;
+
+      > b {
+        font-weight: 700;
+      }
+    }
+
+    #pets-select {
+      width: 77.5%;
+      height: 40px;
+      margin-top: 26px;
+      margin-left: 11.56%;
+    }
+  }
+}
+
+#is-results-container {
+  width: auto;
+  height: auto;
+
+  display: flex;
+}
+
+#no-container {
+  width: 100%;
+  height: 486px;
+  color: #A9A9A9;
+
+  display: flex;
+  flex-direction: column;
+
+  #no-title {
+    width: 78.125%;
+    height: auto;
+    margin-top: 47px;
+    margin-left: 10.937%;
+
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0px;
+  }
+
+  #no-text {
+    width: 69%;
+    height: auto;
+    
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0px;
+    
+    margin-top: 16px;
+    margin-left: 11.56%;
+  }
+
+  #no-img {
+    width: 84.81px;
+    height: auto;
+    
+    margin-top: 37.68px;
+    margin-left: 33.437%;
+    
+  }
+}
+
+#results-container {
+  position: relative;
+  width: 100%;
+  height: 659px;
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+
+  #results-header-img {
+    position: relative;
+    max-width: 146px;
+    width: 45.62%;
+    height: auto;
+    margin-top: 32px;
+    margin-left: 14.37%;
+  }
+
+  #results-title {
+    position: relative;
+    width: 75.94%;
+    height: auto;
+    margin-top: 16px;
+    margin-left: 15%;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+  }
+
+  #splide01 {
+    position: relative;
+    height: 321px;
+    margin-top: 16px;
+
+
+    .plant-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+
+      border-radius: 5px;
+
+
+      .staff-favorite {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 132px;
+        height: 34.3px;
+        color: #fff;
+        background: #75BC97;
+        border-radius: 0 17.2px 17.2px 0;
+        z-index: 10;
+
+        .staff-text-box {
+          position: absolute;
+          height: 15px;
+          left: 10%;
+          right: 10%;
+          top: calc(50% - 15px/2 - 4.4px);
+
+          font-style: normal;
+          font-weight: 700;
+          font-size: 12.8px;
+          line-height: 15.6px;
+
+          display: flex;
+          flex-direction: row;
+
+          span {
+            position: relative;
+            -moz-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+          }
+  
+          p {
+            position: relative;
+          }
+        }
+      }
+
+      .plant-img-container {
+        position: absolute;
+        width: 187px;
+        height: 221px;
+        top: 25px;
+        left: 53px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        >.plant-img {
+          position: relative;
+          margin: 12px 18px;
+          width: 80.75%;
+          height: auto;
+          max-height: 197px;
+        }
+      }
+
+      .plant-name {
+        position: absolute;
+        height: 28px;
+        left: 8.14%;
+        right: 29.84%;
+        top: calc(50% - 28px/2 + 105.5px);
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 28px;
+
+        color: #1E6B4E;
+      }
+
+      .plant-price {
+        position: absolute;
+        height: 28px;
+        left: 8.14%;
+        right: 68.99%;
+        top: calc(50% - 28px/2 + 132.5px);
+        
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 28px;
+        
+        color: #257556;
+      }
+
+      #plant-icon-pets {
+        position: absolute;
+        left: 63.95%;
+        right: 27.52%;
+        top: 88.47%;
+        bottom: 6.23%;
+        max-width: 22px;
+        height: auto;
+      }
+
+      #plant-icon-sun {
+        position: absolute;
+        left: 75.97%;
+        right: 16.67%;
+        top: 87.85%;
+        bottom: 6.23%;
+        width: 19px;
+        height: 19px;
+      }
+
+      #plant-icon-water {
+        position: absolute;
+        left: 86.05%;
+        right: 7.75%;
+        top: 88.16%;
+        bottom: 6.85%;
+        max-width: 24px;
+        height: auto;
+      }
+    }
+  }
+
+  .results-return-button {
+    position: relative;
+    width: 282px;
+    height: 50px;
+    margin-top: 32px;
+    margin-left: 19px;
+    border: 1px solid #15573F;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .arrow-up {
+      position: relative;
+      height: 21.3px;
+      width: 17.2px;
+    }
+
+    >span {
+      position: relative;
+      margin-left: 16.4px;
+      height: 19px;
+
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 20px;
+
+      color: #196146;
+    }
+  }
+}
